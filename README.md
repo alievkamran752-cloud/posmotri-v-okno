@@ -1,1 +1,1 @@
-https://github.com/Li-na52/posmotri_v_okno
+https://github.com/alievkamran752-cloud/posmotri_v_okno
