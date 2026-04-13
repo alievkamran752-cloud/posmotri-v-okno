@@ -1,1 +1,1 @@
-https://github.com/alievkamran752-cloud/posmotri_v_okno
+https://github.com/Fixtq/posmotri_v_okno
