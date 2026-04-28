@@ -1,1 +1,1 @@
-https://github.com/alievkamran752-cloud/posmotri-v-okno/edit/main/README.md
+https://github.com/alievkamran752-cloud/posmotri-v-okno/README.md
