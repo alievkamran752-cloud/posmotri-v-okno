@@ -1,20 +1,22 @@
-@font-face {
-  font-family: Oswald;
-  src: url(./Oswald-Bold.woff2) format('woff2'), url(./Oswald-Bold.woff) format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+name: Tests
 
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: url(./FiraSansCondensed-Regular.woff2) format('woff2'), url(./FiraSansCondensed-Regular.woff) format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
 
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: url(./FiraSansCondensed-Bold.woff2) format('woff2'), url(./FiraSansCondensed-Bold.woff) format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Check if the repository is private
+        run: exit 1
+        if: ${{github.event.repository.private}}
+      - name: Tests
+        uses: Yandex-Practicum/test-project-action@v1
+        with:
+          project: 'posmotri-v-okno-ad'
