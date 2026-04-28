@@ -269,7 +269,7 @@ function showMoreCards({
   // добавить кнопку из темплейта в конец списка карточек
   const button = buttonTemplate.content.cloneNode(true);
   cardsContainer.append(button);
-  // Выберем добавленный элемент по селектору и добавим слушатель клика
+  // Выберем добавленный элемент по селектору и добавим слушатель клика 
   const buttonInDOM = cardsContainer.querySelector(buttonSelector);
   buttonInDOM.addEventListener('click', async () => {
     // по клику запросим данные для следующей страницы
